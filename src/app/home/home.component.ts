@@ -17,9 +17,12 @@ export class HomeComponent implements OnInit {
  bgColor : string = 'blue';
  bgColor1 : string = 'blue';
 hour:any[];
+showmode:string;
 
 
-  constructor(private api:HttpClient) { }
+  constructor(private api:HttpClient) {
+   this.showmode='showonlytemperature';
+   }
 
 
 
@@ -52,23 +55,7 @@ addItem(newItem:string) {
 //   this.dataday=newItem1;
 // }
 
-weather(data:string){
-  var base1URL = "https://api.openweathermap.org/data/2.5/forecast?q="+data+"&appid=bc645b6a6e278cf237a8f16ac7167754"
-  this.api.get(base1URL)
-    .subscribe((res)=>{
-      this.dataday =res;
-      console.log(this.data);
-      console.log(this.dataday);
-      // this.hour=[this.dataday];  
-    
-    },
-    (err)=>{
-      alert("Searched city was not found.Try with a valid city name");
-//To enable the clicking of another button in different component with data entered in different componenent, write button inside ngIf use the exact interpolation used to display the data in click function for eg data.name removing interpolation symbol 
-//In ts file write in method weather(data:string).
 
 
-    })
 
-}
 }

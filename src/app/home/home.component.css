@@ -13,6 +13,9 @@
 }
 .card{
     margin: 2vh 23vw 0 18vw;
+    margin-top: 10vh;
+
+ 
 }
 .card .card-title{
     background-color: white;
@@ -22,23 +25,17 @@
     display: flex;
     font-weight: bold;
     color: white;
-    flex-wrap: wrap;
 }
 
 .card-content td{
-    padding-left: 10px;
+    padding-left: 23px;
+    padding-top:18px;
 }
 
 img{
-    padding-left: 5vw;
+    padding-left: 15vw;
 }
-.button button{
-    width: 100%;
-    margin-top: 23px;
-    border-radius: 10px;
-    color: blue;
-    font-weight: bold;
-}
+
 
 .error{
     box-shadow: 4px 4px 4px 4px blue;
@@ -46,26 +43,16 @@ img{
     font-weight: bold;
     margin-top: 15vh;
     width: 40vw;
-    animation: float;
     position: absolute;
     top: 15vh;
     left: 23vw;
 }
 
 
-.card1 {
-    overflow: scroll;
-    color: white;
-}
 
-.card-content1 tr th{
-    padding-left:  5vw; ;
 
-}
 
-.card-content1 tr td{
-    padding-left: 5vw;
-}
+
 
 
 
